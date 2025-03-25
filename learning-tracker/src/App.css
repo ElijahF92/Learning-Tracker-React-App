@@ -1,0 +1,225 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+  display: block;
+}
+
+select, input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #6aa84f;
+  color: rgb(255, 255, 255);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5a8a3f;
+}
+
+.delete-button {
+  color: red;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  transition: color 0.3s;
+}
+
+.add-assignment-button {
+  background-color: #007bff;
+}
+
+.add-assignment-button:hover {
+  background-color: #0056b3;
+}
+
+.export-button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #6aa84f;
+}
+
+.export-button:hover {
+  background-color: #5a8a3f;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+td input, td select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.learning-target {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.add-learning-target-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+
+.add-learning-target-button:hover {
+  background-color: #0056b3;
+}
+
+.learning-target-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.assignment-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.assignment-row tr {
+  flex-grow: 1;
+}
+
+.assignment-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.assignment-container tr {
+  flex-grow: 1;
+}
+
+.assignment-table {
+  flex-grow: 1;
+}
+
+.trash-icon-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 43px; /* This accounts for the table header height */
+}
+
+.icon-cell {
+  height: 60px; /* Match the height of table rows */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trash-icon {
+  width: 15.2832px;
+  height: 18.5645px;
+  cursor: pointer;
+}
+
+.no-assignments {
+  color: gray;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 10px;
+}
