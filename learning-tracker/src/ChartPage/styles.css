@@ -1,0 +1,41 @@
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+#standardSelect {
+    margin: 10px 0;
+    padding: 5px;
+    width: 200px;
+}
+
+#csvFile {
+    margin: 10px 0;
+}
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 60px;
+    margin-top: 20px;
+}
+
+.chart-container {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: white;
+}
+
+.chart-container h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+canvas {
+    width: 100% !important;
+    height: 300px !important;
+}

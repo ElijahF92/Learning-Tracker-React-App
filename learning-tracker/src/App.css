@@ -42,13 +42,24 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.container {
-  max-width: 800px;
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 25px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -215,6 +226,7 @@ td input, td select {
   width: 15.2832px;
   height: 18.5645px;
   cursor: pointer;
+  padding-left: 10px;
 }
 
 .no-assignments {
@@ -222,4 +234,39 @@ td input, td select {
   font-size: 0.9rem;
   text-align: center;
   margin-top: 10px;
+}
+
+.chart-container {
+  margin-top: 10px;
+}
+
+.chart-wrapper {
+  position: relative;
+  width: 50%;
+  height: 0;
+  padding-bottom: 60%;
+  margin-top: 20px;
+}
+
+.chart-wrapper canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.chart-button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chart-button:hover {
+  background-color: #356ac3;
 }
